@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="App icon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#223044"/>
+      <stop offset="1" stop-color="#111923"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#82b6ff"/>
+      <stop offset="0.55" stop-color="#4f7df0"/>
+      <stop offset="1" stop-color="#3a5ad6"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bg)" stroke="#3a4d63" stroke-width="1.5"/>
+  <rect x="13" y="11" width="34" height="33" rx="8" fill="url(#tile)"/>
+  <circle cx="24" cy="21" r="3.2" fill="#fff" opacity="0.93"/>
+  <path d="M19 37.6 26.2 29l5.1 5.4L37.6 27l5.4 7.7V40a4 4 0 0 1-4 4H23a4 4 0 0 1-4-4z" fill="#fff" opacity="0.95"/>
+  <path d="M46.5 37.5l2 5.5 5.5 2-5.5 2-2 5.5-2-5.5-5.5-2 5.5-2z" fill="#fff"/>
+</svg>

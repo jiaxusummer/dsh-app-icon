@@ -1,0 +1,62 @@
+{
+  "name": "dsh-app-icon",
+  "version": "0.1.0",
+  "description": "Change the DeepSeek Harness desktop app icon (window, taskbar, tray): restore the default icon, or use your own image.",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "icon",
+    "desktop",
+    "windows",
+    "tray"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "locale",
+    "docs",
+    "README.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "engines": {
+    "node": ">=22.16.0",
+    "dsh": ">=0.2.2-rc.1 <0.3.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.2-rc.1": "compatible",
+        "0.2.2-rc.3": "compatible"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiaxusummer/dsh-app-icon.git"
+  },
+  "homepage": "https://github.com/jiaxusummer/dsh-app-icon#readme",
+  "author": "jiaxuzhixia"
+}

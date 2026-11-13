@@ -13,8 +13,10 @@ DeepSeek Harness 桌面版的**应用图标**切换插件：默认图标 / 自�
 
 ## 安装
 
+从 GitHub 安装：
+
 ```sh
-dsh plugin --profile desktop add dsh-app-icon
+dsh plugin --profile desktop add https://github.com/jiaxusummer/dsh-app-icon
 ```
 
 本地开发也可以直接把本目录当 bundle 装：
@@ -27,13 +29,13 @@ dsh plugin --profile desktop add link:C:\path\to\dsh-app-icon
 
 ## 发布
 
-包名 `dsh-app-icon`（npm 上目前是空的），发布前把 `version` 改成你的版本：
+当前只从 GitHub 分发（npm 暂未发布）；以后发布 npm 时，把 `version` 改成你的版本：
 
 ```sh
 npm publish
 ```
 
-只发 npm、不打算上架的话，`package.json` 里的 `license`、`files`、`exports` 已经齐了；要上 DSH 插件市场，再按市场要求补仓库地址和截图。
+`package.json` 里的 `license`、`files`、`exports` 已经齐了；要上 DSH 插件市场，再按市场要求补仓库地址和截图。
 
 ## 文档
 
